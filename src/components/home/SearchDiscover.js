@@ -60,6 +60,7 @@ const SearchDiscover = () => {
           </a>
         </div>
       </div>
+      <hr className="my-8 border-t-2 border-gray-200 mx-auto w-7/12 mt-20 mb-20 md:hidden" />
     </section>
   );
 };
