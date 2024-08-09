@@ -1,21 +1,8 @@
-// import React from "react";
-
-// const Subhero = () => {
-//   return (
-//     <section className="bg-blue-500 text-white py-12 px-6 text-center">
-//       <h2 className="text-3xl font-bold">Discover More</h2>
-//       <p className="mt-2 text-lg">Find out what makes us special.</p>
-//     </section>
-//   );
-// };
-
-// export default Subhero;
-
 import React from "react";
 import Logo from "./homeImg/logo.svg";
 import LaptopScreen from "./homeImg/screen-1.png";
 
-const HeroSection = () => {
+const Subhero = () => {
   return (
     <section className="py-16 px-6">
       <div className="max-w-4xl mx-auto">
@@ -55,4 +42,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default Subhero;
