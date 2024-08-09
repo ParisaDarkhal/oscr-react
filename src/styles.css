@@ -1,0 +1,56 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+@import url("https://fonts.googleapis.com/css?family=Inter:600");
+/* The following line is used to measure usage of this code. You can remove it if you want. */
+@import url("https://px.animaapp.com/6622cd6896d9bdd8fb0e696c.6622cd6996d9bdd8fb0e696f.xt8u1Aa.hcp.png");
+
+@font-face {
+  font-family: "Helvetica Neue-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("./fonts/HelveticaNeueMed.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica Neue-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/Helvetica.otf") format("opentype");
+}
+@font-face {
+  font-family: "Helvetica Neue-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/HelveticaNeue Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Helvetica Neue-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: url("./fonts/HelveticaNeue-Light.otf") format("opentype");
+}
+
+.font-custom1 {
+  font-family: "Helvetica Neue-Regular";
+}
+
+body {
+}
+
+.hero-span1 {
+  color: #e1b580;
+}
+
+.hero-span2 {
+  color: #e09a48;
+}
+
+.hero-span3 {
+  color: #d47302;
+}
+
+.hero-span4 {
+  color: #d47302;
+}
+
+.small-logo {
+  width: 80px;
+}
