@@ -39,7 +39,7 @@ const Footer = () => {
         <img src={Logo} alt="Logo" className="h-8" />
       </div>
       <div className="text-center mt-4 text-gray-600">
-        &copy; {new Date().getFullYear()} OSCRAI. All rights reserved.
+        &copy; {new Date().getFullYear()} OscrAI. All rights reserved.
       </div>
     </footer>
   );
