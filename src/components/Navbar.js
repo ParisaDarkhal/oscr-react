@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import Logo from "./images/logo.svg";
 
 const Navbar = () => {
@@ -11,29 +12,29 @@ const Navbar = () => {
   return (
     <header className="bg-white py-4 px-6 fixed top-0 left-0 right-0 z-50 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <a href="#">
+        <Link to="/">
           <img src={Logo} alt="Logo" className="h-8" />
-        </a>
+        </Link>
 
         <div className="hidden md:flex items-center space-x-4">
           {/* Desktop Menu */}
           <nav>
             <ul className="flex space-x-4">
               <li>
-                <a
-                  href="index.html"
+                <Link
+                  to="/"
                   className="text-gray-600 hover:text-gray-900 hover:font-semibold"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="pricing.html"
+                <Link
+                  to="/pricing"
                   className="text-gray-600 hover:text-gray-900 hover:font-semibold"
                 >
                   Pricing
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>

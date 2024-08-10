@@ -14,6 +14,7 @@ import Testimonials from "./components/home/Testimonials";
 import FAQ from "./components/FAQ";
 import Terms from "./components/Terms";
 import Privacy from "./components/Privacy";
+import Pricing from "./components/pricing/Pricing";
 
 const Home = () => {
   return (
@@ -33,13 +34,13 @@ function App() {
     <Router>
       <Navbar />
 
-      {/* <div className="text-center p-4"> 
-      </div> */}
+      
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/faq" element={<FAQ />} />
         <Route path="/terms" element={<Terms />} />
         <Route path="/privacy" element={<Privacy />} />
+        <Route path="/pricing" element={<Pricing />} />
       </Routes>
 
       <Footer />
