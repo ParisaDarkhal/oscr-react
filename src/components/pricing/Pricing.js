@@ -1,5 +1,6 @@
 import React from "react";
 import PricingCard from "./CardPricing";
+import HorizontalCard from "./HorizontalCard";
 
 const Pricing = () => {
   const professionalFeatures = [
@@ -33,9 +34,14 @@ const Pricing = () => {
     "YouTube video transcripts (for videos shorter than 2 hours)",
   ];
 
+  const EnterpriseFeatures = [
+    "Custom Implementation and Use Cases",
+    "Volume Discount and Technical Support",
+  ];
+
   return (
     <div className="container mx-auto px-4 py-20">
-      <h1 className="text-3xl font-bold mb-8 text-center">Pricing Plans</h1>
+      <h1 className="text-3xl font-bold mb-10 text-center">Pricing Plans</h1>
       <div className="grid md:grid-cols-3 gap-8">
         {/* ///////////////////////////////////////// */}
         <PricingCard
@@ -65,6 +71,21 @@ const Pricing = () => {
           features={SuperStarFeatures}
           isBestValue={false}
         />
+      </div>
+      <HorizontalCard
+        title="Enterprise"
+        description="Have custom request?"
+        ourOffer={"Let's chat."}
+        features={EnterpriseFeatures}
+        isBestValue={false}
+      />
+      <div>
+        <p className=" mt-10">
+          * For more information about credit usage,
+          <a href="FAQ.html#credits" target="_blank" class="text-orange-500">
+            click here
+          </a>
+        </p>
       </div>
     </div>
   );

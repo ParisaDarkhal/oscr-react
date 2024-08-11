@@ -1,18 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from "@react-email/components";
 
-const CardPricing = ({
+const HorizontalCard = ({
   title,
   description,
-  price,
-  credits,
+  ourOffer,
+
   features,
   isBestValue = false,
 }) => {
   return (
     <div
-      className={`bg-gray-100 rounded-lg p-6 shadow-lg  transition duration-300 hover:scale-110  ${
-        isBestValue ? "border-solid border-2 border-orange-500" : ""
+      className={`bg-white rounded-lg py-10 px-20 mt-3 shadow-lg transition duration-300 hover:scale-110 md:grid md:grid-cols-2 md:gap-4  ${
+        isBestValue
+          ? "border-2 border-orange-500 "
+          : " border-solid border-2 border-orange-500"
       } relative`}
     >
       {isBestValue && (
@@ -20,18 +22,18 @@ const CardPricing = ({
           BEST VALUE
         </div>
       )}
-      <h2 className="text-2xl font-bold mb-2">{title}</h2>
-      <p className="text-gray-600 mb-4">{description}</p>
-      <div className="text-4xl font-bold mb-2">
-        ${price}{" "}
-        <span className="text-gray-600 text-sm font-normal">Per month</span>
+      <div className="md:col-span-1">
+        <h2 className="text-2xl font-bold mb-2">{title}</h2>
+        <p className="text-gray-600 mb-4">{description}</p>
+        <div className="text-4xl font-bold mb-2">{ourOffer} </div>
       </div>
-      <p className="text-sm mb-4">{credits} credits*/month</p>
-      <Link to="https://app.oscr.tech/login" target="_blank">
-        <button className="w-full bg-orange-500 text-white py-3 rounded-full mb-6 hover:bg-orange-600 transition-colors">
-          Try for free →
-        </button>
-      </Link>
+      <div className="md:col-span-1 md:flex md:justify-center md:align-center">
+        <Link href="mailto:support@oscr.tech">
+          <button className="w-full bg-orange-500 text-white py-3 rounded-full mb-6 hover:bg-orange-600 transition-colors md:w-60 ">
+            Let's talk →
+          </button>
+        </Link>
+      </div>
       <ul className="space-y-2">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
@@ -57,4 +59,4 @@ const CardPricing = ({
   );
 };
 
-export default CardPricing;
+export default HorizontalCard;
