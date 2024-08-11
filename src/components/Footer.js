@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./images/logo.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,31 +9,31 @@ const Footer = () => {
         <nav>
           <ul className="flex space-x-4">
             <li>
-              <a
-                href="privacy.html"
+              <Link
+                to="/privacy"
                 target="_blank"
                 className="text-gray-600 hover:text-gray-900 font-bold"
               >
                 Privacy
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="terms.html"
+              <Link
+                to="/terms"
                 target="_blank"
                 className="text-gray-600 hover:text-gray-900 font-bold"
               >
                 Terms
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="FAQ.html"
+              <Link
+                to="/faq#credits"
                 target="_blank"
                 className="text-gray-600 hover:text-gray-900 font-bold"
               >
                 FAQ
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

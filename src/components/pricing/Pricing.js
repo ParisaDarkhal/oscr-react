@@ -1,8 +1,11 @@
 import React from "react";
 import PricingCard from "./CardPricing";
 import HorizontalCard from "./HorizontalCard";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Pricing = () => {
+  ///////
   const professionalFeatures = [
     "Personalized onboarding (30 min call)",
     "Access to all social tools and discovery tools",
@@ -81,10 +84,10 @@ const Pricing = () => {
       />
       <div>
         <p className=" mt-10">
-          * For more information about credit usage,
-          <a href="FAQ.html#credits" target="_blank" class="text-orange-500">
+          * For more information about credit usage,<span> </span>
+          <Link to={"/faq?section=credits"} target="_blank" class="text-orange-500">
             click here
-          </a>
+          </Link>
         </p>
       </div>
     </div>
